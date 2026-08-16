@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Vumani Ngubane | Entrepreneur • Innovator • Creative</title>
+    <title>Vumani Ngubane | Entrepreneur, Innovator & Creative</title>
 
-    <meta name="description" content="Official website of Vumani Ngubane — entrepreneur, innovator, transportation and logistics enthusiast, content creator and actor.">
+    <meta name="description"
+          content="Official website of Vumani Ngubane, a South African entrepreneur, innovator, transportation and logistics enthusiast, content creator and aspiring actor.">
 
-    <meta name="keywords" content="Vumani Ngubane, Vumani Ngubane South Africa, transportation, logistics, entrepreneur, TwinFleet, content creator, actor">
+    <meta name="keywords"
+          content="Vumani Ngubane, Vumani, South Africa, entrepreneur, transportation, logistics, TwinFleet, University of Johannesburg, content creator, actor, innovator">
+
+    <meta name="author" content="Vumani Ngubane">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Website URL -->
+    <link rel="canonical" href="https://vumaningubane.github.io/">
+
+    <!-- Social sharing -->
+    <meta property="og:title"
+          content="Vumani Ngubane | Entrepreneur, Innovator & Creative">
+
+    <meta property="og:description"
+          content="Discover the journey, projects, creative work and interests of Vumani Ngubane.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url"
+          content="https://vumaningubane.github.io/">
+
+    <meta property="og:image"
+          content="https://vumaningubane.github.io/IMG_20260623_164545_632.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="Vumani Ngubane | Entrepreneur, Innovator & Creative">
+
+    <meta name="twitter:description"
+          content="Official website of Vumani Ngubane.">
+
+    <meta name="twitter:image"
+          content="https://vumaningubane.github.io/IMG_20260623_164545_632.jpg">
+
+
+    <!-- Google structured information -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vumani Ngubane",
+        "url": "https://vumaningubane.github.io/",
+        "email": "mailto:vumaningubane207@gmail.com",
+        "image": "https://vumaningubane.github.io/IMG_20260623_164545_632.jpg",
+        "jobTitle": "Entrepreneur, Innovator and Creative",
+        "description": "South African entrepreneur, innovator, transportation and logistics enthusiast, content creator and aspiring actor.",
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "University of Johannesburg"
+        },
+        "sameAs": [
+            "https://www.tiktok.com/@vumanii_aka_nkosiih",
+            "https://www.instagram.com/vumani_aka_nkosiih/"
+        ]
+    }
+    </script>
+
 
     <style>
+
+        /* =========================
+           GENERAL
+        ========================= */
+
         * {
             margin: 0;
             padding: 0;
@@ -19,19 +85,20 @@
         }
 
         :root {
-            --bg: #070b14;
-            --bg2: #0d1424;
-            --card: #111a2e;
+            --background: #060a12;
+            --background-two: #0b1220;
+            --card: #101a2d;
             --blue: #1683ff;
             --light-blue: #63b3ff;
             --white: #ffffff;
-            --muted: #aab7ca;
+            --text: #dbe7f5;
+            --muted: #a7b5c8;
             --border: rgba(99, 179, 255, 0.18);
         }
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: var(--bg);
+            background: var(--background);
             color: var(--white);
             line-height: 1.7;
         }
@@ -41,14 +108,21 @@
             text-decoration: none;
         }
 
-        /* NAVIGATION */
+        img {
+            max-width: 100%;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
 
         header {
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(7, 11, 20, 0.94);
-            backdrop-filter: blur(12px);
+            background: rgba(6, 10, 18, 0.94);
+            backdrop-filter: blur(15px);
             border-bottom: 1px solid var(--border);
         }
 
@@ -59,11 +133,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 20px;
         }
 
         .logo {
-            font-size: 22px;
+            font-size: 23px;
             font-weight: bold;
+            white-space: nowrap;
         }
 
         .logo span {
@@ -73,12 +149,13 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 22px;
+            justify-content: center;
             flex-wrap: wrap;
+            gap: 20px;
         }
 
         nav a {
-            color: #dbe7f5;
+            color: var(--text);
             font-size: 14px;
             transition: 0.3s;
         }
@@ -87,7 +164,10 @@
             color: var(--light-blue);
         }
 
-        /* HERO */
+
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
             min-height: 90vh;
@@ -95,9 +175,19 @@
             align-items: center;
             position: relative;
             overflow: hidden;
+
             background:
-                radial-gradient(circle at 80% 30%, rgba(22, 131, 255, 0.18), transparent 30%),
-                radial-gradient(circle at 20% 80%, rgba(99, 179, 255, 0.08), transparent 30%);
+                radial-gradient(
+                    circle at 80% 25%,
+                    rgba(22, 131, 255, 0.20),
+                    transparent 32%
+                ),
+
+                radial-gradient(
+                    circle at 15% 80%,
+                    rgba(99, 179, 255, 0.08),
+                    transparent 30%
+                );
         }
 
         .hero-container {
@@ -105,48 +195,56 @@
             width: 100%;
             margin: auto;
             padding: 80px 25px;
+
             display: grid;
-            grid-template-columns: 1.4fr 0.8fr;
-            gap: 50px;
+            grid-template-columns: 1.25fr 0.75fr;
+            gap: 60px;
             align-items: center;
         }
 
         .hero small {
             color: var(--light-blue);
             font-weight: bold;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-transform: uppercase;
         }
 
         .hero h1 {
-            font-size: clamp(45px, 7vw, 82px);
-            line-height: 1.05;
-            margin: 18px 0;
+            font-size: clamp(48px, 7vw, 85px);
+            line-height: 1;
+            margin: 20px 0;
         }
 
         .hero h1 span {
             color: var(--light-blue);
         }
 
-        .hero p {
-            color: var(--muted);
-            font-size: 19px;
+        .hero-description {
+            color: var(--text);
+            font-size: 20px;
             max-width: 700px;
         }
 
+        .hero-intro {
+            margin-top: 18px;
+            color: var(--muted);
+            max-width: 650px;
+        }
+
         .buttons {
-            margin-top: 30px;
+            margin-top: 32px;
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
         }
 
         .btn {
+            display: inline-block;
             padding: 13px 22px;
             border-radius: 8px;
             border: 1px solid var(--blue);
-            transition: 0.3s;
             font-weight: bold;
+            transition: 0.3s;
         }
 
         .btn-primary {
@@ -163,22 +261,51 @@
             box-shadow: 0 8px 25px rgba(22, 131, 255, 0.25);
         }
 
-        .photo-placeholder {
-            width: 280px;
-            height: 340px;
+
+        /* =========================
+           PROFILE PHOTO
+        ========================= */
+
+        .photo-container {
+            width: 350px;
+            height: 450px;
             margin: auto;
-            border: 2px solid var(--border);
+
+            padding: 8px;
+
+            border: 1px solid rgba(99, 179, 255, 0.35);
             border-radius: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: linear-gradient(145deg, #111a2e, #080d18);
-            color: var(--muted);
-            padding: 25px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(22, 131, 255, 0.18),
+                    rgba(7, 11, 20, 0.9)
+                );
+
+            box-shadow:
+                0 25px 60px rgba(0, 0, 0, 0.45),
+                0 0 35px rgba(22, 131, 255, 0.08);
+
+            overflow: hidden;
         }
 
-        /* GENERAL */
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            display: block;
+
+            object-fit: contain;
+
+            border-radius: 18px;
+
+            background: #080d18;
+        }
+
+
+        /* =========================
+           SECTIONS
+        ========================= */
 
         section {
             padding: 100px 25px;
@@ -202,22 +329,25 @@
         }
 
         .section-title h2 {
-            font-size: 40px;
+            font-size: 42px;
             margin-top: 10px;
         }
 
         .section-title p {
             color: var(--muted);
-            max-width: 650px;
-            margin: 10px auto;
+            max-width: 700px;
+            margin: 12px auto;
         }
 
-        /* ABOUT */
+
+        /* =========================
+           CARDS
+        ========================= */
 
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 30px;
+            gap: 25px;
         }
 
         .card {
@@ -225,6 +355,7 @@
             border: 1px solid var(--border);
             border-radius: 16px;
             padding: 30px;
+
             transition: 0.3s;
         }
 
@@ -242,7 +373,29 @@
             color: var(--muted);
         }
 
-        /* EDUCATION */
+
+        /* =========================
+           BIOGRAPHY
+        ========================= */
+
+        .story {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .story p {
+            color: var(--muted);
+            margin-bottom: 20px;
+        }
+
+        .story strong {
+            color: var(--white);
+        }
+
+
+        /* =========================
+           EDUCATION TIMELINE
+        ========================= */
 
         .timeline {
             max-width: 800px;
@@ -251,8 +404,12 @@
 
         .timeline-item {
             border-left: 2px solid var(--blue);
-            padding: 0 0 35px 30px;
+            padding: 0 0 40px 30px;
             position: relative;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
         }
 
         .timeline-item::before {
@@ -260,11 +417,14 @@
             position: absolute;
             left: -7px;
             top: 0;
+
             width: 12px;
             height: 12px;
+
             background: var(--light-blue);
             border-radius: 50%;
-            box-shadow: 0 0 15px rgba(99,179,255,0.7);
+
+            box-shadow: 0 0 15px rgba(99, 179, 255, 0.7);
         }
 
         .timeline-item h3 {
@@ -275,41 +435,78 @@
             color: var(--muted);
         }
 
-        /* PROJECTS */
+
+        /* =========================
+           PROJECTS
+        ========================= */
 
         .project-card {
-            background: linear-gradient(145deg, #101a30, #0b1120);
+            background:
+                linear-gradient(
+                    145deg,
+                    #101a30,
+                    #0a101d
+                );
+
             border: 1px solid var(--border);
-            border-radius: 18px;
-            padding: 35px;
+            border-radius: 20px;
+            padding: 40px;
         }
 
         .project-card h3 {
-            font-size: 30px;
+            font-size: 32px;
             color: var(--light-blue);
         }
 
-        .project-card .tagline {
-            color: #dbe7f5;
-            margin: 8px 0 20px;
+        .project-tagline {
+            color: var(--text);
+            margin: 5px 0 20px;
+        }
+
+        .project-card p {
+            color: var(--muted);
+        }
+
+        .contributions {
+            margin-top: 25px;
+            padding: 20px;
+            background: rgba(22, 131, 255, 0.07);
+            border-left: 3px solid var(--blue);
+            border-radius: 8px;
+        }
+
+        .contributions strong {
+            color: var(--light-blue);
         }
 
         .team {
-            margin-top: 25px;
+            margin-top: 30px;
+        }
+
+        .team h4 {
+            color: var(--white);
+            margin-bottom: 12px;
         }
 
         .team span {
             display: inline-block;
+
             background: #18243a;
             border: 1px solid var(--border);
+
             padding: 7px 12px;
             border-radius: 20px;
+
             margin: 5px 5px 5px 0;
+
             color: #dcecff;
             font-size: 14px;
         }
 
-        /* CREATIVE */
+
+        /* =========================
+           CREATIVE
+        ========================= */
 
         .three-columns {
             display: grid;
@@ -317,7 +514,21 @@
             gap: 25px;
         }
 
-        /* VALUES */
+
+        /* =========================
+           MENTORSHIP
+        ========================= */
+
+        .mentor-card {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+
+        /* =========================
+           VALUES
+        ========================= */
 
         .values {
             display: flex;
@@ -329,13 +540,18 @@
         .value {
             padding: 12px 20px;
             border-radius: 30px;
+
             background: #111d33;
             border: 1px solid var(--border);
+
             color: var(--light-blue);
             font-weight: bold;
         }
 
-        /* SOCIAL */
+
+        /* =========================
+           SOCIAL MEDIA
+        ========================= */
 
         .socials {
             display: flex;
@@ -346,10 +562,13 @@
         }
 
         .social {
-            padding: 12px 18px;
+            padding: 12px 20px;
+
             border: 1px solid var(--border);
             border-radius: 8px;
-            color: #dcecff;
+
+            color: var(--text);
+
             transition: 0.3s;
         }
 
@@ -359,44 +578,67 @@
             transform: translateY(-3px);
         }
 
-        /* CONTACT */
+
+        /* =========================
+           CONTACT
+        ========================= */
 
         .contact {
             text-align: center;
+
             background:
-                radial-gradient(circle at center, rgba(22,131,255,0.15), transparent 50%),
-                var(--bg2);
+                radial-gradient(
+                    circle at center,
+                    rgba(22, 131, 255, 0.15),
+                    transparent 50%
+                ),
+                var(--background-two);
         }
 
         .email {
             display: inline-block;
             margin-top: 20px;
+
             font-size: 20px;
             color: var(--light-blue);
+
+            word-break: break-word;
         }
 
-        /* FOOTER */
+
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             text-align: center;
+
             padding: 30px 20px;
+
             border-top: 1px solid var(--border);
+
             color: var(--muted);
+
             background: #050810;
         }
 
-        /* MOBILE */
+        footer p {
+            margin: 5px 0;
+        }
 
-        @media (max-width: 800px) {
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 850px) {
 
             nav {
                 flex-direction: column;
-                gap: 15px;
             }
 
             nav ul {
-                justify-content: center;
-                gap: 13px;
+                gap: 12px;
             }
 
             .hero-container {
@@ -404,12 +646,19 @@
                 text-align: center;
             }
 
-            .hero p {
-                margin: auto;
+            .hero-description,
+            .hero-intro {
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .buttons {
                 justify-content: center;
+            }
+
+            .photo-container {
+                width: 290px;
+                height: 390px;
             }
 
             .about-grid,
@@ -417,60 +666,109 @@
                 grid-template-columns: 1fr;
             }
 
-            .photo-placeholder {
-                width: 220px;
-                height: 270px;
-            }
-
             section {
                 padding: 75px 20px;
             }
 
             .section-title h2 {
-                font-size: 32px;
+                font-size: 34px;
+            }
+
+            .project-card {
+                padding: 25px;
             }
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
 <header>
+
     <nav>
-        <a href="#home" class="logo">Vumani<span>.</span></a>
+
+        <a href="#home" class="logo">
+            Vumani<span>.</span>
+        </a>
 
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#story">Biography</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#creative">Creative</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#story">Biography</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#creative">Creative</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
         </ul>
+
     </nav>
+
 </header>
 
 
-<!-- HERO -->
+
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero" id="home">
+
     <div class="hero-container">
 
         <div>
-            <small>Welcome to my world</small>
+
+            <small>
+                Welcome to my world
+            </small>
 
             <h1>
                 Vumani<br>
                 <span>Ngubane</span>
             </h1>
 
-            <p>
+            <p class="hero-description">
                 Entrepreneur • Innovator • Creative •
                 Transportation & Logistics Enthusiast
             </p>
 
+            <p class="hero-intro">
+                A young South African building a journey across
+                transportation, logistics, entrepreneurship,
+                technology and the creative world.
+            </p>
+
             <div class="buttons">
+
                 <a href="#story" class="btn btn-primary">
                     Explore My Journey
                 </a>
@@ -478,360 +776,691 @@
                 <a href="#contact" class="btn btn-secondary">
                     Let's Connect
                 </a>
+
             </div>
+
         </div>
 
-        <div class="photo-placeholder">
-            <div>
-                <strong>PHOTO</strong>
-                <br><br>
-                My professional photo
-                will be added here.
-            </div>
+
+        <div class="photo-container">
+
+            <img
+                src="IMG_20260623_164545_632.jpg"
+                alt="Vumani Ngubane"
+            >
+
         </div>
 
     </div>
+
 </section>
 
 
-<!-- ABOUT -->
+
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section id="about">
+
     <div class="container">
 
         <div class="section-title">
-            <small>Who I Am</small>
-            <h2>About Me</h2>
+
+            <small>
+                Who I Am
+            </small>
+
+            <h2>
+                About Me
+            </h2>
+
             <p>
-                A young South African with interests that connect
-                transportation, innovation, entrepreneurship and creativity.
+                Entrepreneur • Ambitious • Creative •
+                Innovative • Determined
             </p>
+
         </div>
+
 
         <div class="about-grid">
 
-            <div class="card">
-                <h3>My Identity</h3>
-                <p>
-                    I am Vumani Ngubane, a young South African entrepreneur,
-                    innovator and creative with a growing passion for
-                    transportation, logistics, technology and storytelling.
-                </p>
-            </div>
 
             <div class="card">
-                <h3>My Vision</h3>
+
+                <h3>
+                    My Identity
+                </h3>
+
                 <p>
-                    I want to explore the intersection of transportation,
-                    logistics, technology and entrepreneurship while developing
-                    innovative solutions to real-world challenges.
+                    I am Vumani Ngubane, a young South African
+                    entrepreneur, innovator and creative with
+                    a growing passion for transportation,
+                    logistics, technology and storytelling.
                 </p>
+
             </div>
 
-            <div class="card">
-                <h3>My Interests</h3>
-                <p>
-                    Transportation management, logistics, supply chains,
-                    fleet management, route planning, innovation,
-                    entrepreneurship, acting and digital content.
-                </p>
-            </div>
 
             <div class="card">
-                <h3>What Drives Me</h3>
+
+                <h3>
+                    My Vision
+                </h3>
+
                 <p>
-                    I am passionate about learning, developing ideas,
-                    working with others and turning opportunities into
-                    meaningful experiences and projects.
+                    I want to explore the intersection of
+                    transportation, logistics, technology and
+                    entrepreneurship while developing innovative
+                    solutions to real-world challenges.
                 </p>
+
             </div>
+
+
+            <div class="card">
+
+                <h3>
+                    My Interests
+                </h3>
+
+                <p>
+                    Transportation management, logistics,
+                    supply chains, fleet management, route
+                    planning, transportation technology,
+                    innovation, entrepreneurship, acting
+                    and digital content.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    What Drives Me
+                </h3>
+
+                <p>
+                    I am passionate about learning, developing
+                    ideas, working with others and turning
+                    opportunities into meaningful experiences
+                    and projects.
+                </p>
+
+            </div>
+
 
         </div>
 
     </div>
+
 </section>
 
 
-<!-- BIOGRAPHY -->
+
+<!-- =========================
+     BIOGRAPHY
+========================= -->
 
 <section id="story">
+
     <div class="container">
 
         <div class="section-title">
-            <small>My Journey</small>
-            <h2>My Story</h2>
+
+            <small>
+                My Journey
+            </small>
+
+            <h2>
+                My Story
+            </h2>
+
         </div>
 
-        <div class="card">
+
+        <div class="card story">
 
             <p>
-                I was born in Johannesburg in 2006. At a young age,
-                I relocated to the rural areas of eMsinga in KwaZulu-Natal,
+                I was born in <strong>Johannesburg in 2006</strong>.
+                At a young age, I relocated to the rural areas
+                of <strong>eMsinga in KwaZulu-Natal</strong>,
                 where I began my early educational journey.
             </p>
 
-            <br>
 
             <p>
-                Growing up, I had a strong interest in becoming an actor.
-                Creativity and storytelling were already part of the
-                person I wanted to become.
+                Growing up, I had a strong interest in becoming
+                an actor. Creativity and storytelling were already
+                part of the person I wanted to become.
             </p>
 
-            <br>
 
             <p>
-                My educational journey started at Makhandana Primary School.
-                I later attended Nomafu High School before completing my
-                matric at KwaNdunge High School in 2023.
+                My educational journey started at
+                <strong>Makhandana Primary School</strong>.
+                I later attended <strong>Nomafu High School</strong>
+                before completing my matric at
+                <strong>KwaNdunge High School in 2023</strong>.
             </p>
 
-            <br>
 
             <p>
-                When I entered the University of Johannesburg, my interests
-                began to expand. I developed a strong interest in
-                transportation, logistics and supply chain, while continuing
-                to hold onto my passion for creativity.
+                When I entered the
+                <strong>University of Johannesburg</strong>,
+                my interests began to expand. I developed a
+                strong interest in transportation, logistics
+                and supply chain, while continuing to hold onto
+                my passion for creativity.
             </p>
 
-            <br>
 
             <p>
                 My university journey has allowed me to explore
-                entrepreneurship and innovation through collaborative
-                projects such as TwinFleet. It has also given me opportunities
-                to develop leadership and communication skills.
+                entrepreneurship and innovation through
+                collaborative projects such as
+                <strong>TwinFleet</strong>. These experiences
+                have helped me develop my ability to work in
+                teams, develop ideas and present solutions.
             </p>
 
-            <br>
 
             <p>
-                In 2026, I became a UJ mentor supporting first-year students,
-                an experience that continues to develop my leadership,
-                communication and ability to encourage others.
+                In <strong>2026</strong>, I became a
+                <strong>UJ Peer Mentor</strong>, supporting and
+                guiding first-year students. This experience
+                continues to develop my leadership, communication,
+                teamwork and mentoring skills.
             </p>
 
-            <br>
 
             <p>
-                At the same time, I continue to explore my creative side.
-                I have attended a Hlophe Casting Agency workshop and have
-                gained experience as a background actor in
-                <em>Homecoming</em>.
+                At the same time, I continue to explore my
+                creative side. I have attended a
+                <strong>Hlophe Casting Agency workshop</strong>
+                and gained experience as a background actor in
+                <strong><em>Homecoming</em></strong>.
             </p>
 
-            <br>
 
             <p>
-                My journey is still being written. I am determined to keep
-                learning, creating, building and exploring opportunities
-                across transportation, entrepreneurship and the creative
-                world.
+                My journey is still being written. I am determined
+                to keep learning, creating, building and exploring
+                opportunities across transportation,
+                entrepreneurship and the creative world.
             </p>
 
         </div>
 
     </div>
+
 </section>
 
 
-<!-- EDUCATION -->
+
+<!-- =========================
+     EDUCATION
+========================= -->
 
 <section id="education">
+
     <div class="container">
 
         <div class="section-title">
-            <small>My Academic Journey</small>
-            <h2>Education</h2>
+
+            <small>
+                My Academic Journey
+            </small>
+
+            <h2>
+                Education
+            </h2>
+
         </div>
+
 
         <div class="timeline">
 
-            <div class="timeline-item">
-                <h3>Makhandana Primary School</h3>
-                <p>Early education.</p>
-            </div>
 
             <div class="timeline-item">
-                <h3>Nomafu High School</h3>
-                <p>Secondary education.</p>
-            </div>
 
-            <div class="timeline-item">
-                <h3>KwaNdunge High School</h3>
-                <p>Completed matric in 2023.</p>
-            </div>
+                <h3>
+                    Makhandana Primary School
+                </h3>
 
-            <div class="timeline-item">
-                <h3>University of Johannesburg</h3>
                 <p>
-                    Current university student exploring transportation,
-                    logistics, entrepreneurship and innovation.
+                    Early education.
                 </p>
+
             </div>
+
+
+            <div class="timeline-item">
+
+                <h3>
+                    Nomafu High School
+                </h3>
+
+                <p>
+                    Secondary education.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <h3>
+                    KwaNdunge High School
+                </h3>
+
+                <p>
+                    Completed matric in 2023.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <h3>
+                    University of Johannesburg
+                </h3>
+
+                <p>
+                    Current university student with interests
+                    in transportation, logistics,
+                    entrepreneurship and innovation.
+                </p>
+
+            </div>
+
 
         </div>
 
     </div>
+
 </section>
 
 
-<!-- PROJECTS -->
+
+<!-- =========================
+     TWINFLEET
+========================= -->
 
 <section id="projects">
+
     <div class="container">
 
         <div class="section-title">
-            <small>Innovation & Entrepreneurship</small>
-            <h2>Projects</h2>
+
+            <small>
+                Innovation & Entrepreneurship
+            </small>
+
+            <h2>
+                Projects
+            </h2>
+
         </div>
+
 
         <div class="project-card">
 
-            <h3>TwinFleet</h3>
+            <h3>
+                TwinFleet
+            </h3>
 
-            <p class="tagline">
+            <p class="project-tagline">
                 A collaborative transportation technology project.
             </p>
 
-            <p>
-                TwinFleet is a collaborative project developed by a team
-                of University of Johannesburg students. The project explores
-                technology-driven solutions for transportation and fleet
-                management.
-            </p>
-
-            <br>
 
             <p>
-                My contributions to the project include business idea
-                development, application design and presentation.
+                TwinFleet is a collaborative project developed
+                by a team of University of Johannesburg students.
+                The project explores technology-driven approaches
+                to transportation and fleet management.
             </p>
+
+
+            <div class="contributions">
+
+                <p>
+                    <strong>My Contributions:</strong>
+                    Business Idea Development •
+                    Application Design •
+                    Presentation
+                </p>
+
+            </div>
+
 
             <div class="team">
 
-                <h3 style="font-size:20px; margin-bottom:10px;">
+                <h4>
                     TwinFleet Team
-                </h3>
+                </h4>
 
-                <span>Vumani Ngubane</span>
-                <span>Sbusiso</span>
-                <span>Minenhle</span>
-                <span>Leo</span>
-                <span>Phiwayinkosi</span>
-                <span>Luyanda</span>
-                <span>Rithilili</span>
+
+                <span>
+                    Vumani Ngubane
+                </span>
+
+                <span>
+                    Sbusiso
+                </span>
+
+                <span>
+                    Minenhle
+                </span>
+
+                <span>
+                    Leo
+                </span>
+
+                <span>
+                    Phiwayinkosi
+                </span>
+
+                <span>
+                    Luyanda
+                </span>
+
+                <span>
+                    Rithilili
+                </span>
 
             </div>
 
         </div>
 
     </div>
+
 </section>
 
 
-<!-- CREATIVE -->
+
+<!-- =========================
+     CREATIVE
+========================= -->
 
 <section id="creative">
+
     <div class="container">
 
         <div class="section-title">
-            <small>My Creative Side</small>
-            <h2>Creative Work</h2>
+
+            <small>
+                My Creative Side
+            </small>
+
+            <h2>
+                Creative Work
+            </h2>
+
         </div>
+
 
         <div class="three-columns">
 
-            <div class="card">
-                <h3>🎬 Acting</h3>
-                <p>
-                    Acting has been one of my interests since childhood.
-                    I have attended a Hlophe Casting Agency workshop and
-                    gained background acting experience in
-                    <em>Homecoming</em>.
-                </p>
-            </div>
 
             <div class="card">
-                <h3>📱 Content Creation</h3>
+
+                <h3>
+                    🎬 Acting
+                </h3>
+
                 <p>
-                    I am interested in creating digital content and using
-                    social platforms to tell stories, express ideas and
-                    connect with audiences.
+                    Acting has been one of my interests since
+                    childhood. I have attended a Hlophe Casting
+                    Agency workshop and gained background acting
+                    experience in <em>Homecoming</em>.
                 </p>
+
             </div>
 
+
             <div class="card">
-                <h3>🎵 Digital Media</h3>
+
+                <h3>
+                    📱 Content Creation
+                </h3>
+
                 <p>
-                    I continue to explore music, digital media and creative
-                    projects as part of my wider creative journey.
+                    I am interested in creating digital content
+                    and using social platforms to tell stories,
+                    express ideas and connect with audiences.
                 </p>
+
             </div>
+
+
+            <div class="card">
+
+                <h3>
+                    🎵 Digital Media
+                </h3>
+
+                <p>
+                    I continue to explore music, digital media
+                    and creative projects as part of my wider
+                    creative journey.
+                </p>
+
+            </div>
+
 
         </div>
 
     </div>
+
 </section>
 
 
-<!-- LEADERSHIP -->
+
+<!-- =========================
+     TRANSPORTATION
+========================= -->
 
 <section>
+
     <div class="container">
 
         <div class="section-title">
-            <small>Leadership & Community</small>
-            <h2>2026 UJ Peer Mentor</h2>
-        </div>
 
-        <div class="card" style="text-align:center; max-width:800px; margin:auto;">
+            <small>
+                Professional Interests
+            </small>
+
+            <h2>
+                Transportation & Logistics
+            </h2>
 
             <p>
-                In 2026, I became a University of Johannesburg peer mentor,
-                supporting and guiding first-year students through their
-                university journey.
+                Exploring how transportation, logistics,
+                technology and innovation can work together
+                to solve real-world challenges.
             </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+            <div class="card">
+
+                <h3>
+                    🚛 Transportation
+                </h3>
+
+                <p>
+                    Interested in transportation systems,
+                    mobility, vehicle operations and the
+                    movement of people and goods.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    📦 Logistics & Supply Chain
+                </h3>
+
+                <p>
+                    Interested in logistics operations,
+                    supply chains and how resources can be
+                    moved efficiently.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    🗺️ Routing & Fleet Management
+                </h3>
+
+                <p>
+                    Interested in route planning, fleet
+                    management, vehicle utilization and
+                    transportation decision-making.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    💡 Innovation
+                </h3>
+
+                <p>
+                    Passionate about exploring technology
+                    and entrepreneurial ideas that can
+                    improve transportation and logistics.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     UJ MENTOR
+========================= -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <small>
+                Leadership & Community
+            </small>
+
+            <h2>
+                2026 UJ Peer Mentor
+            </h2>
+
+        </div>
+
+
+        <div class="card mentor-card">
+
+            <p>
+                In 2026, I became a
+                <strong>University of Johannesburg Peer Mentor</strong>,
+                supporting and guiding first-year students through
+                their university journey.
+            </p>
+
 
             <br>
 
+
             <p>
                 This experience has strengthened my leadership,
-                communication, teamwork and mentoring skills.
+                communication, teamwork and mentoring skills while
+                giving me the opportunity to encourage and support
+                fellow students.
             </p>
 
         </div>
 
     </div>
+
 </section>
 
 
-<!-- VALUES -->
+
+<!-- =========================
+     VALUES
+========================= -->
 
 <section>
+
     <div class="container">
 
         <div class="section-title">
-            <small>What Represents Me</small>
-            <h2>My Values</h2>
+
+            <small>
+                What Represents Me
+            </small>
+
+            <h2>
+                My Values
+            </h2>
+
         </div>
+
 
         <div class="values">
 
-            <div class="value">Entrepreneur</div>
-            <div class="value">Ambitious</div>
-            <div class="value">Creative</div>
-            <div class="value">Innovative</div>
-            <div class="value">Determined</div>
+            <div class="value">
+                Entrepreneur
+            </div>
+
+            <div class="value">
+                Ambitious
+            </div>
+
+            <div class="value">
+                Creative
+            </div>
+
+            <div class="value">
+                Innovative
+            </div>
+
+            <div class="value">
+                Determined
+            </div>
 
         </div>
 
     </div>
+
 </section>
 
 
-<!-- CONTACT -->
+
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section class="contact" id="contact">
 
@@ -839,17 +1468,24 @@
 
         <div class="section-title">
 
-            <small>Let's Connect</small>
+            <small>
+                Let's Connect
+            </small>
 
-            <h2>Get In Touch</h2>
+            <h2>
+                Get In Touch
+            </h2>
 
             <p>
-                Interested in connecting, collaborating or learning more
-                about my journey and projects?
+                Interested in connecting, collaborating or
+                learning more about my journey and projects?
             </p>
 
-            <a class="email"
-               href="mailto:vumaningubane207@gmail.com">
+
+            <a
+                class="email"
+                href="mailto:vumaningubane207@gmail.com"
+            >
                 vumaningubane207@gmail.com
             </a>
 
@@ -858,41 +1494,30 @@
 
         <div class="socials">
 
-            <a class="social"
-               href="https://www.tiktok.com/@Vumanii_Aka_Nkosih"
-               target="_blank">
-                TikTok
+
+            <!-- TikTok -->
+
+            <a
+                class="social"
+                href="https://www.tiktok.com/@vumanii_aka_nkosiih"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                🎵 TikTok
             </a>
 
-            <a class="social"
-               href="https://www.instagram.com/Vumanii_aka_nkosiih"
-               target="_blank">
-                Instagram
+
+            <!-- Instagram -->
+
+            <a
+                class="social"
+                href="https://www.instagram.com/vumani_aka_nkosiih/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                📸 Instagram
             </a>
 
-            <a class="social"
-               href="https://www.youtube.com/@VceedMusic_SA"
-               target="_blank">
-                YouTube
-            </a>
-
-            <a class="social"
-               href="https://www.linkedin.com/in/vumani-ngubane"
-               target="_blank">
-                LinkedIn
-            </a>
-
-            <a class="social"
-               href="https://twitter.com/"
-               target="_blank">
-                X / Twitter
-            </a>
-
-            <a class="social"
-               href="https://www.facebook.com/"
-               target="_blank">
-                Facebook
-            </a>
 
         </div>
 
@@ -900,6 +1525,11 @@
 
 </section>
 
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -913,5 +1543,6 @@
 
 </footer>
 
+
 </body>
-    </html>
+</html>
